@@ -1,11 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', 
-  basePath: '/petcare-vitrine', 
-  images: {
-    unoptimized: true, 
-  },
+  /* Vercel gère tout automatiquement, pas besoin de basePath ni d'output export */
 };
 
 export default nextConfig;
