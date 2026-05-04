@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', // Nécessaire pour l'export statique sur GitHub Pages
-  basePath: '/petcare-vitrine', // Doit correspondre exactement au nom de ton dépôt
+  output: 'export', 
+  basePath: '/petcare-vitrine', 
   images: {
-    unoptimized: true, // Obligatoire pour GitHub Pages
+    unoptimized: true, 
   },
 };
 
