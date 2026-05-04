@@ -18,7 +18,7 @@ export default function CliniquePage() {
         <div className="max-w-7xl mx-auto">
           <div className="relative h-[70vh] w-full rounded-[60px] overflow-hidden shadow-2xl">
             <Image 
-              src="/petcare-vitrine/images/CABINET.jpg" 
+              src="/petcare-vitrine/public/images/CABINET.jpg" 
               alt="Notre salle de soin principale" 
               fill 
               className="object-cover"
@@ -35,7 +35,7 @@ export default function CliniquePage() {
           
           <div className="md:col-span-7 space-y-10">
             <div className="relative h-[500px] rounded-[50px] overflow-hidden shadow-lg rotate-1 hover:rotate-0 transition-transform duration-500">
-              <Image src="/petcare-vitrine/images/CABINET3.jpg" alt="Equipement" fill className="object-cover" />
+              <Image src="/petcare-vitrine/public/images/CABINET3.jpg" alt="Equipement" fill className="object-cover" />
             </div>
             <div className="pr-10">
               <h3 className="text-3xl font-serif text-blue-900 mb-4">Hygiène Irréprochable</h3>
@@ -48,10 +48,10 @@ export default function CliniquePage() {
 
           <div className="md:col-span-5 space-y-10">
             <div className="relative h-[400px] rounded-[50px] overflow-hidden shadow-lg -rotate-2 hover:rotate-0 transition-transform duration-500">
-              <Image src="/petcare-vitrine/images/CABINET2.webp" alt="Box Hospitalisation" fill className="object-cover" />
+              <Image src="/petcare-vitrine/public/images/CABINET2.webp" alt="Box Hospitalisation" fill className="object-cover" />
             </div>
             <div className="relative h-[300px] rounded-[50px] overflow-hidden shadow-lg border-8 border-white">
-              <Image src="/petcare-vitrine/images/CABINET5.jpg" alt="Pharmacie" fill className="object-cover" />
+              <Image src="/petcare-vitrine/public/images/CABINET5.jpg" alt="Pharmacie" fill className="object-cover" />
             </div>
           </div>
 
@@ -77,7 +77,7 @@ export default function CliniquePage() {
             </ul>
           </div>
           <div className="w-full md:w-1/2 relative h-[500px] rounded-full overflow-hidden border-[15px] border-blue-50">
-             <Image src="/petcare-vitrine/images/CABINET4.webp" alt="Espace Chat" fill className="object-cover" />
+             <Image src="/petcare-vitrine/public/images/CABINET4.webp" alt="Espace Chat" fill className="object-cover" />
           </div>
         </div>
       </section>
