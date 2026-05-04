@@ -9,7 +9,7 @@ const team = [
     id: 1,
     name: "Dr. Sarah Mansour",
     role: "Vétérinaire Chirurgie",
-    image: "/images/EQUIPE1.jpg",
+    image: "/petcare-vitrine/images/EQUIPE1.jpg",
     bio: "Diplômée de l'ENMV, le Dr. Sarah s'est spécialisée en chirurgie des tissus mous. Passionnée par le bien-être félin, elle veille à ce que chaque opération se déroule dans le calme et la sécurité la plus totale.",
     specialties: ["Chirurgie", "Dentisterie", "Soins Félins"],
     experience: "12 ans d'expérience"
@@ -18,7 +18,7 @@ const team = [
     id: 2,
     name: "Dr. Aziz Ben Fraj",
     role: "Spécialiste NAC",
-    image: "/images/EQUIPE2.jpg",
+    image: "/petcare-vitrine/images/EQUIPE2.jpg",
     bio: "Aziz est notre expert pour les Nouveaux Animaux de Compagnie (lapins, oiseaux, reptiles). Son approche douce et sa connaissance approfondie des espèces exotiques font de lui un pilier de notre clinique.",
     specialties: ["NAC", "Médecine Interne", "Nutrition"],
     experience: "8 ans d'expérience"

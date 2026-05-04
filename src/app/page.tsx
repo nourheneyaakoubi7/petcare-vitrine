@@ -23,7 +23,7 @@ export default function Home() {
           
           <div className="w-full lg:w-1/2 relative">
             <div className="relative h-[600px] w-full rounded-[60px] overflow-hidden shadow-2xl skew-y-1">
-              <Image src="/images/SOIN_CAT2.jpg" alt="Soin Chat" fill className="object-cover" />
+              <Image src="/petcare-vitrine/images/SOIN_CAT2.jpg" alt="Soin Chat" fill className="object-cover" />
             </div>
             <div className="absolute -bottom-10 -left-10 bg-white p-8 rounded-[30px] shadow-xl flex items-center gap-4">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600">✓</div>
