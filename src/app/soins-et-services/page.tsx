@@ -6,7 +6,7 @@ import { MdChevronRight, MdInfoOutline, MdCheckCircleOutline } from "react-icons
 const services = [
   {
     title: "Chirurgie",
-    img: "/petcare-vitrine/public/images/SERVICE2.jpg",
+    img: "/images/SERVICE2.jpg",
     desc: "Bloc opératoire stérile haute technologie.",
     process: [
       { step: "Bilan Pré-opératoire", detail: "Examen sanguin complet pour vérifier l'aptitude à l'anesthésie." },
@@ -16,7 +16,7 @@ const services = [
   },
   {
     title: "Échographie",
-    img: "/petcare-vitrine/public/images/SERVICE.webp",
+    img: "/images/SERVICE.webp",
     desc: "Imagerie médicale avancée pour diagnostic précis.",
     process: [
       { step: "Préparation", detail: "Tonte légère de la zone pour une qualité d'image optimale." },
@@ -26,7 +26,7 @@ const services = [
   },
   {
     title: "Hospitalisation",
-    img: "/petcare-vitrine/public/images/CABINET5.jpg",
+    img: "/images/CABINET5.jpg",
     desc: "Box confortables et surveillance 24h/24.",
     process: [
       { step: "Installation VIP", detail: "Box individuels adaptés à la taille et aux besoins de l'animal." },
@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "Soins Félins",
-    img: "/petcare-vitrine/public/images/SOIN_CAT.jpg",
+    img: "/images/SOIN_CAT.jpg",
     desc: "Espace dédié pour réduire le stress des chats.",
     process: [
       { step: "Zéro Stress", detail: "Utilisation de diffuseurs de phéromones apaisantes dès l'arrivée." },
