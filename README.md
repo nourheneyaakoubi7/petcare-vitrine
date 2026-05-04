@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+
+## ⚖️ License
+
+Ce projet est la propriété exclusive de **Nourhene Yaakoubi**. 
+Tous droits réservés. L'utilisation, la copie ou la modification de ce code à des fins personnelles ou commerciales est strictement interdite sans autorisation préalable.
+
+
+
 ## Getting Started
 
 First, run the development server:
