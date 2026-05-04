@@ -1,49 +1,38 @@
-// src/components/Navbar.tsx
 "use client";
-import { useState } from "react";
-import Link from 'next/link';
+import Link from "next/link";
+import { MdPets, MdPhoneInTalk } from "react-icons/md";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
+export default function Navbar() {
   return (
-    <nav className="fixed w-full bg-white/90 backdrop-blur-md z-[100] border-b border-gray-100">
-      <div className="flex justify-between items-center px-6 md:px-10 py-5">
-        {/* LOGO */}
-        <div className="text-xl md:text-2xl font-serif font-bold tracking-tighter">
-          ARCHI<span className="text-gray-400">TECT</span>
+    <nav className="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-blue-50">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 text-blue-900 font-serif text-2xl font-bold shrink-0">
+          <MdPets className="text-blue-500" size={28} />
+          <span className="tracking-tight">PetCare</span>
+        </Link>
+
+        {/* Liens de navigation - AJOUT DE ACCUEIL */}
+        <div className="hidden lg:flex gap-8 text-[11px] xl:text-[13px] uppercase tracking-[0.2em] font-semibold text-blue-900/70">
+          <Link href="/" className="hover:text-blue-500 transition border-b-2 border-transparent hover:border-blue-500 pb-1">Accueil</Link>
+          <Link href="/la-clinique" className="hover:text-blue-500 transition border-b-2 border-transparent hover:border-blue-500 pb-1">La Clinique</Link>
+          <Link href="/soins-et-services" className="hover:text-blue-500 transition border-b-2 border-transparent hover:border-blue-500 pb-1">Soins</Link>
+          <Link href="/notre-equipe" className="hover:text-blue-500 transition border-b-2 border-transparent hover:border-blue-500 pb-1">L'Équipe</Link>
+          <Link href="/contact" className="hover:text-blue-500 transition border-b-2 border-transparent hover:border-blue-500 pb-1">Contact</Link>
         </div>
 
-        {/* BOUTON MOBILE (BURGER) */}
-        <button 
-          className="md:hidden text-2xl" 
-          onClick={() => setIsOpen(!isOpen)}
+        {/* Bouton Urgence */}
+        <a 
+          href="tel:+21612345678" 
+          className="bg-red-500 text-white px-5 py-2.5 rounded-full text-[10px] font-black flex items-center gap-2 shadow-lg shadow-red-200 hover:scale-105 transition-transform shrink-0"
         >
-          {isOpen ? "✕" : "☰"}
-        </button>
+          <MdPhoneInTalk size={16} />
+          <span className="hidden sm:inline">URGENCE 24/7</span>
+          <span className="sm:hidden text-[14px]">71 000 000</span>
+        </a>
 
-        {/* LIENS DESKTOP */}
-        <div className="hidden md:flex space-x-8 text-xs uppercase tracking-[0.2em] font-medium">
-          <Link href="/" className="hover:text-gray-500 transition">Accueil</Link>
-          <Link href="/qui-sommes-nous" className="hover:text-gray-500 transition">Qui sommes nous</Link>
-          <Link href="/services" className="hover:text-gray-500 transition">Services</Link>
-          <Link href="/Blog" className="hover:text-gray-500 transition">Blog</Link>
-          <Link href="/contact" className="hover:text-gray-500 transition">Contact</Link>
-        </div>
       </div>
-
-      {/* MENU MOBILE (S'affiche uniquement quand isOpen est vrai) */}
-      {isOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 flex flex-col p-6 space-y-4 text-center text-xs uppercase tracking-widest font-bold">
-          <Link href="/" onClick={() => setIsOpen(false)}>Accueil</Link>
-          <Link href="/qui-sommes-nous" onClick={() => setIsOpen(false)}>Qui sommes nous</Link>
-          <Link href="/services" onClick={() => setIsOpen(false)}>Services</Link>
-          <Link href="/Blog" onClick={() => setIsOpen(false)}>Blog</Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)}>Contact</Link>
-        </div>
-      )}
     </nav>
   );
-};
-
-export default Navbar;
+}

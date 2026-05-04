@@ -8,20 +8,20 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'nourhene.yaakoubi.7@gmail.com',
-        pass: 'frbq pioz sifg fesm', // Voir étape 3 ci-dessous
+        user: 'nourhene.yaakoubi.7@gmail.com', // Ton mail
+        pass: process.env.GMAIL_APP_PASSWORD, // Utilise la variable d'env !
       },
     });
 
     const mailOptions = {
       from: email,
       to: 'nourhene.yaakoubi.7@gmail.com',
-      subject: `Nouveau Message de ${nomComplet} : ${objet}`,
+      subject: `🏥 RDV PETCARE : ${nomComplet} - ${objet}`,
       text: `
-        Nom: ${nomComplet}
+        Nouveau message de la part de : ${nomComplet}
         Email: ${email}
         Téléphone: ${telephone}
-        Objet: ${objet}
+        Sujet: ${objet}
         
         Message:
         ${message}
@@ -30,8 +30,8 @@ export async function POST(req: Request) {
 
     await transporter.sendMail(mailOptions);
 
-    return NextResponse.json({ message: "Email envoyé avec succès" }, { status: 200 });
+    return NextResponse.json({ message: "Email envoyé" }, { status: 200 });
   } catch (error) {
-    return NextResponse.json({ message: "Erreur lors de l'envoi" }, { status: 500 });
+    return NextResponse.json({ message: "Erreur" }, { status: 500 });
   }
 }
